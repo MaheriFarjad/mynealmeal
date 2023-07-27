@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" media="screen and (max-width:1170;)" href="phone.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@700&family=Inter:wght@100;200&family=Poppins:wght@300;400;500;700&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Staatliches&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+        }
+
+        .logo {
+            margin: 10px 45px;
+
+        }
+
+        .logo img {
+            margin: 3px 6px;
+
+            height: 56px;
+        }
+
+        .nav ul {
+            display: flex;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .nav::before {
+            content: "";
+
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .nav ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        .nav ul li a {
+            color: black;
+            display: block;
+            padding: 3px 22px;
+            text-decoration: none;
+            border-radius: 20px;
+            border: none;
+
+        }
+
+        .nav ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+
+        /*  Home Section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 578px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+
+            background: url(Screenshot_8.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #home h1 {
+            color: black;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        #home p {
+            color: black;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5rem;
+
+
+        }
+
+        .btn {
+            padding: 6px 20px;
+            background-color: brown;
+            margin: 17px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .h-secondary {
+            font-size: 1.8rem;
+            padding: 12px;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #services {
+            display: flex;
+            margin: 34px;
+        }
+
+        #services .box {
+            border: 1px solid brown;
+            padding: 34px;
+            margin: 3px 6px;
+            border-radius: 28px;
+            background-color: #f2f2f2;
+
+        }
+
+        #services .box img {
+            height: 160px;
+            display: block;
+            margin: auto;
+
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        /* CLient section */
+        #client-section{
+            position: relative;
+        }
+        #clients {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #clients img {
+            width: 124px;
+        }
+
+        .cleint-item {
+            padding: 34px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: #87CEEB;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        /*    COntact Us Section */
+        #contact {
+            width: 100%;
+            height: 100%;
+            background: #90EE90;
+
+
+        }
+
+        #contact-us {
+            padding: 50px 0px;
+        }
+
+        footer {
+            padding: 15px 20px;
+            background-color: #F5F5F5;
+            color: #333333;
+        }
+
+        #contact-us {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-us textarea {
+            padding: 0.5rem;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+        #contact-us input {
+            padding: 0.5rem;
+            width: 100%;
+            border-radius: 9px;
+        }
+
+        #contact-us form {
+            width: 40%;
+        }
+        
+        #contact-us label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+
+        }
+        button {
+            padding: 7px 13px;
+            background-color: chartreuse;
+            color: black;
+            
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="Farjad.jpg" alt="">
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services-container">Our Services</a></li>
+            <li><a href="#client-section">Clients</a></li>
+            <li><a href="#contact">Contact US</a></li>
+        </ul>
+    </div>
+    <section id="home">
+        <h1 class="h-primary">Welcome To Our Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quam.</p>
+        <p>Lorem ipsum dolor Ullam, quam.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center" style="margin-top: 15px" ;>Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="healthy.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores enim, neque cum
+                    labore iusto ad sunt
+                    corporis impedit sapiente qui dolores nam rem, natus veritatis quibusdam? Inventore cum saepe quis!
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="quick.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores enim, neque cum
+                    labore iusto ad sunt
+                    corporis impedit sapiente qui dolores nam rem, natus veritatis quibusdam? Inventore cum saepe quis!
+                </p>
+            </div>
+            <div class="box">
+                <img src="quick.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores enim, neque cum
+                    labore iusto ad sunt
+                    corporis impedit sapiente qui dolores nam rem, natus veritatis quibusdam? Inventore cum saepe quis!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="cleint-item">
+                <img src="Screenshot_9.jpg" alt="Our Client">
+            </div>
+            <div class="cleint-item">
+                <img src="second logo 1-03.png" alt="Our Client">
+            </div>
+            <div class="cleint-item">
+                <img src="lololo.png" alt="Our Client">
+            </div>
+            <div class="cleint-item">
+                <img src="tomato.png" alt="Our Client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact US</h1>
+        <div id="contact-us">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Enter YOur Name Here">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <br>
+                    <input type="email" name="name" id="email" placeholder="Enter YOur Email Here" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone:</label>
+                    <br>
+                    <input type="phone" name="name" id="phone" placeholder="Enter YOur Phone Here" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+               <button>Submit Message</button>
+
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; All RIght Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
